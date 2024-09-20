@@ -35,32 +35,35 @@ OUTPUT_DIRECTORY = docs  # Directory where the generated documentation will go
 ```
 FILE_PATTERNS = *.c *.cpp *.h *.hpp
 ```
-Explanation: This ensures that both C (*.c, *.h) and C++ (*.cpp, *.hpp) files are included in the documentation generation.
+**Explanation:** This ensures that both C (*.c, *.h) and C++ (*.cpp, *.hpp) files are included in the documentation generation.
 - Extract All Comments:
 ```
 EXTRACT_ALL = YES
 ```  
-Explanation: Doxygen will extract and document everything, even without specific Doxygen tags like @param.
+**Explanation:** Doxygen will extract and document everything, even without specific Doxygen tags like @param.
 - Optimize for C:
 ```
 OPTIMIZE_OUTPUT_FOR_C = YES
 ```  
-Explanation: This optimizes the documentation for both C and C++ code.
+**Explanation:** This optimizes the documentation for both C and C++ code.
 - Function Documentation:
 ```
 EXTRACT_PRIVATE = YES   # Extract private functions (in C++) 
 EXTRACT_STATIC = YES    # Include static functions (C/C++)
 ```  
-Explanation: Use these to include private and static functions in the documentation.
+**Explanation:** Use these to include private and static functions in the documentation.
 - HTML Output:
 ```
 GENERATE_HTML = YES
 HTML_OUTPUT = html
 ```
-Explanation: This enables HTML documentation output and specifies the folder where the HTML files will be stored.
+
+**Explanation:**  This enables HTML documentation output and specifies the folder where the HTML files will be stored.
 Example Source Code (C and C++)
 Here’s a small example showing both C and C++ functions with appropriate Doxygen comments.
+
 --- 
+
 # How to Generate Documentation
 After configuring the Doxyfile and ensuring your comments are correctly formatted, run:
 ```
