@@ -1,0 +1,81 @@
+#---------------------------------------------------------------------------
+# Project-related settings
+#---------------------------------------------------------------------------
+
+PROJECT_NAME           = "Your Project Name"          # The name of your project
+PROJECT_NUMBER         = "1.0"                        # Version number of the project
+OUTPUT_DIRECTORY       = docs                         # Where the documentation will be saved
+
+#---------------------------------------------------------------------------
+# Input/output settings
+#---------------------------------------------------------------------------
+
+INPUT                  = .                            # Directory containing the source code
+OUTPUT_DIRECTORY       = docs                         # Directory to store the generated documentation
+FILE_PATTERNS          = *.c *.cpp *.h *.hpp          # File types to include in the documentation
+RECURSIVE              = YES                          # Search subdirectories for source files
+
+#---------------------------------------------------------------------------
+# Build settings
+#---------------------------------------------------------------------------
+
+GENERATE_HTML          = YES                          # Enable HTML documentation generation
+HTML_OUTPUT            = html                         # Folder to store HTML output
+GENERATE_LATEX         = NO                           # Disable LaTeX output (PDFs, etc.)
+GENERATE_MAN           = NO                           # Disable man pages generation
+GENERATE_RTF           = NO                           # Disable RTF generation (Word format)
+
+#---------------------------------------------------------------------------
+# Extraction settings
+#---------------------------------------------------------------------------
+
+EXTRACT_ALL            = YES                          # Extract all comments, even without Doxygen tags
+EXTRACT_PRIVATE        = YES                          # Extract private members (C++ private classes)
+EXTRACT_STATIC         = YES                          # Include static functions in the documentation
+EXTRACT_LOCAL_CLASSES  = YES                          # Extract local classes and methods
+
+#---------------------------------------------------------------------------
+# Optimization for C and C++
+#---------------------------------------------------------------------------
+
+OPTIMIZE_OUTPUT_FOR_C  = YES                          # Optimize output for C/C++
+OPTIMIZE_FOR_FORTRAN   = NO                           # No need for Fortran optimization
+OPTIMIZE_OUTPUT_JAVA   = NO                           # Disable Java-specific optimizations
+
+#---------------------------------------------------------------------------
+# Documentation details
+#---------------------------------------------------------------------------
+
+INCLUDE_PARAM_NAMES    = YES                          # Include parameter names in function docs
+ALWAYS_DETAILED_SEC    = NO                           # Avoid unnecessarily splitting docs into sections
+JAVADOC_AUTOBRIEF      = YES                          # Autobrief: treat first sentence as brief description
+
+#---------------------------------------------------------------------------
+# Warnings and diagnostics
+#---------------------------------------------------------------------------
+
+WARN_IF_UNDOCUMENTED   = YES                          # Warn if functions/structs/classes are undocumented
+WARN_IF_DOC_ERROR      = YES                          # Warn about potential errors in documentation
+WARNINGS               = YES                          # Show warnings during the generation
+
+#---------------------------------------------------------------------------
+# Preprocessing settings (optional)
+#---------------------------------------------------------------------------
+
+MACRO_EXPANSION        = YES                          # Enable macro expansion (helpful for C)
+EXPAND_ONLY_PREDEF     = NO                           # Don't limit expansion to predefined macros
+
+#---------------------------------------------------------------------------
+# Source code documentation settings
+#---------------------------------------------------------------------------
+
+SOURCE_BROWSER         = YES                          # Include source code in the generated docs
+INLINE_SOURCES         = YES                          # Display source code inline with the documentation
+
+#---------------------------------------------------------------------------
+# Miscellaneous settings
+#---------------------------------------------------------------------------
+
+QUIET                 = NO                            # Set to NO to see what's happening during generation
+EXTERNAL_GROUPS        = YES                          # Enable external groups for modular code documentation
+
